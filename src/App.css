@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;  /* Light grey background for the app */
+  color: #333;  /* Dark grey text for readability */
+}
+
+.App {
+  text-align: center;
+}
+
+/* Styling for the header */
+.header {
+  background-color: #333;  /* Black background for header */
+  color: white;  /* White text for contrast */
+  padding: 20px;
+}
+
+.header h1 {
+  color: #6A0DAD;  /* Purple color for the store name */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  color: #6A0DAD;  /* Purple on hover */
+}
+
+button {
+  background-color: #6A0DAD;  /* Purple button background */
+  color: white;  /* White button text */
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #4B0082;  /* Dark purple on hover */
+}
+
+/* Product list styles */
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
+  background-color: white;
+}
+
+.product-card h3 {
+  color: #6A0DAD; 
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+
+/* Enhanced h2 styling */
+h2 {
+  font-size: 2.5rem; 
+  color: purple; 
+  text-align: center; 
+  padding: 20px; 
+  margin-bottom: 30px; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  position: relative;
+  z-index: 1;
+}
+
+h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 4px;
+  width: 100px;
+  margin: 0 auto;
+  background-color: purple; /* Accent color underline */
+  z-index: -1;
+}
+
+/*Registration form css*/
+.registration-form {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #6A0DAD;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4B0082;
+}
+
+/*Help css*/
+.help-popup {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.help-popup p {
+  margin-bottom: 10px;
+}
+
+.help-popup button {
+  background-color: #6A0DAD; /* Purple */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.help-popup button:hover {
+  background-color: #333; /* Darker shade */
+}

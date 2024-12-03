@@ -1,0 +1,33 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Ensures that the image fits within the dimensions */
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkpurple;
+}
